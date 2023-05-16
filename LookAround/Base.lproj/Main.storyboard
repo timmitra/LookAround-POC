@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qtx-wp-gUn">
-                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qtx-wp-gUn">
+                                <rect key="frame" x="0.0" y="90" width="393" height="762"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
                             <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fHt-31-eD1">
@@ -30,9 +29,29 @@
                                     <segue destination="bib-ey-TaJ" kind="embed" identifier="presentLookAroundEmbedded" id="U7t-0J-Prq"/>
                                 </connections>
                             </containerView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dOs-jH-C44">
+                                <rect key="frame" x="0.0" y="59" width="393" height="32"/>
+                                <segments>
+                                    <segment title="CN Tower"/>
+                                    <segment title="ScotiaBank Arena"/>
+                                    <segment title="AGO"/>
+                                </segments>
+                                <connections>
+                                    <action selector="landmark:" destination="BYZ-38-t0r" eventType="valueChanged" id="D7R-UB-USm"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dOs-jH-C44" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2Kx-Y6-SWL"/>
+                            <constraint firstAttribute="bottom" secondItem="Qtx-wp-gUn" secondAttribute="bottom" id="4iu-yl-tn2"/>
+                            <constraint firstItem="Qtx-wp-gUn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6ql-xz-vB1"/>
+                            <constraint firstItem="Qtx-wp-gUn" firstAttribute="top" secondItem="dOs-jH-C44" secondAttribute="bottom" id="80A-Xc-o1L"/>
+                            <constraint firstItem="dOs-jH-C44" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kba-tx-2Ze"/>
+                            <constraint firstItem="dOs-jH-C44" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XXG-yp-oZE"/>
+                            <constraint firstItem="Qtx-wp-gUn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="frY-hJ-y7s"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="Qtx-wp-gUn" id="JLd-mH-Rqm"/>
