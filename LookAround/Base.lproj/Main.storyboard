@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Look around view controllers" minToolsVersion="14.0"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -22,6 +23,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
+                            <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fHt-31-eD1">
+                                <rect key="frame" x="8" y="668" width="240" height="150"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="bib-ey-TaJ" kind="embed" identifier="presentLookAroundEmbedded" id="U7t-0J-Prq"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -33,6 +41,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+        <!--Look Around View Controller-->
+        <scene sceneID="S4H-So-tKy">
+            <objects>
+                <lookAroundViewController id="bib-ey-TaJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="em5-0r-1YV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="811" y="-2"/>
         </scene>
     </scenes>
     <resources>
