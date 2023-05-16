@@ -6,9 +6,18 @@
 //
 
 import UIKit
+import MapKit
 
-class LandmarkViewController: UIViewController {
+class LandmarkViewController: UIViewController, MKMapViewDelegate {
 
+    @IBOutlet var mapView: MKMapView!
+    
+    private var lookAroundViewController: MKLookAroundViewController?
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // grab lookAroundView instance
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
