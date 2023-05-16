@@ -36,6 +36,7 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="Qtx-wp-gUn" id="JLd-mH-Rqm"/>
+                        <outlet property="preview" destination="fHt-31-eD1" id="MXe-mH-Goa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
