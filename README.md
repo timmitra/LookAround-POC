@@ -1,1 +1,1 @@
-POC for Apple LookAround from WWDC 2022 video
+POC for Apple LookAround from WWDC 2022 video - What's new in MapKit - WWDC22 - Videos - Apple Developer
