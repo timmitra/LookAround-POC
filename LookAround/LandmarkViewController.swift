@@ -34,6 +34,8 @@ class LandmarkViewController: UIViewController, MKMapViewDelegate {
             request.naturalLanguageQuery = "ScotiaBank Arena"
         } else if sender.selectedSegmentIndex == 2 {
             request.naturalLanguageQuery = "Art Gallery of Ontario"
+        } else if sender.selectedSegmentIndex == 3 {
+            request.naturalLanguageQuery = "43.65380°N, 79.38282°W"
         }
         
         let search = MKLocalSearch(request: request)

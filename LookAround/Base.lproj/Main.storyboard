@@ -35,6 +35,7 @@
                                     <segment title="CN Tower"/>
                                     <segment title="ScotiaBank Arena"/>
                                     <segment title="AGO"/>
+                                    <segment title="483 Bay"/>
                                 </segments>
                                 <connections>
                                     <action selector="landmark:" destination="BYZ-38-t0r" eventType="valueChanged" id="D7R-UB-USm"/>
